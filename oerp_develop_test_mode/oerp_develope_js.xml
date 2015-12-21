@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <template id="oerp_develope_mode" name="oerp_develope_mode assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/oerp_develop_test_mode/static/src/js/chrome.js"></script>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>
