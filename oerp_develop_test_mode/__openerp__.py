@@ -22,7 +22,7 @@
 {
     'name': 'OpenERP - Develop - Test Mode',
     'version': '8.0.0',
-    "author": "Ruchir Shukla (Bizzappdev)",
+    "author": "BizzAppDev",
     "website": "http://bizzappdev.com",
     "category": "GenericModules",
     'sequence': 20,
