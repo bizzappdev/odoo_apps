@@ -25,11 +25,12 @@ from openerp.tools.config import config
 config['publisher_warranty_url'] = ''
 _logger = logging.getLogger(__name__)
 from openerp.models import AbstractModel
-
+from openerp.release import version_info
 
 from openerp.tools import config
 
-config['publisher_warranty_url'] = ''
+if not(version_info and isinstance(version_info, (list,tuple)) and 'e' == version_info[-1]):
+    config['publisher_warranty_url'] = ''
 
 class publisher_warranty_contract(AbstractModel):
     _inherit = "publisher_warranty.contract"
@@ -42,15 +43,22 @@ class publisher_warranty_contract(osv.osv):
     _inherit = 'publisher_warranty.contract'
 
     def _get_sys_logs(self, cr, uid):
-        return 
+        
+        if version_info and isinstance(version_info, (list,tuple)) and 'e' == version_info[-1]:
+            ret =super(publisher_warranty_contract, self)._get_sys_logs(cr, uid)
+        return
     def update_notification(self, cr, uid, ids, cron_mode=True,
                             context=None):
-
-        _logger.info("NO More Spying Stuff")
-
+        if version_info and isinstance(version_info, (list,tuple)) and 'e' == version_info[-1]:
+            return super(publisher_warranty_contract, self).update_notification(
+                cr, uid, ids, cron_mode=cron_mode, context=context)
+        _logger.info("NO More Phoning Home Stuff")
         return True
-
-
+    def set_notification_update(self, cr, uid, cron_id):
+        print "22222222@",cron_id
+        if version_info and isinstance(version_info, (list,tuple)) and 'e' == version_info[-1]:
+            self.pool.get('ir.cron').write(cr, uid, cron_id, {'active': True})
+        
 publisher_warranty_contract()
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
 
