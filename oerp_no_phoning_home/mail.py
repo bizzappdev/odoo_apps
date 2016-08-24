@@ -21,17 +21,28 @@
 
 from openerp.osv import osv
 import logging
-
+from openerp.tools.config import config
+config['publisher_warranty_url'] = ''
 _logger = logging.getLogger(__name__)
+from openerp.models import AbstractModel
+
 
 from openerp.tools import config
 
 config['publisher_warranty_url'] = ''
 
+class publisher_warranty_contract(AbstractModel):
+    _inherit = "publisher_warranty.contract"
 
+    def _get_message(self, cr, uid):
+        return {}
+    
+    
 class publisher_warranty_contract(osv.osv):
     _inherit = 'publisher_warranty.contract'
 
+    def _get_sys_logs(self, cr, uid):
+        return 
     def update_notification(self, cr, uid, ids, cron_mode=True,
                             context=None):
 

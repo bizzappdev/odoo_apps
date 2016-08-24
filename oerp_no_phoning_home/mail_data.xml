@@ -21,6 +21,9 @@
             <xpath expr="." position="inside">
                 <script type="text/javascript" src="/oerp_no_phoning_home/static/src/js/announcement.js"></script>
             </xpath>
+            <xpath expr="//script[@src='/mail/static/src/js/announcement.js']" position="replace">
+            
+            </xpath>
         </template>
     </data>
 </openerp>
