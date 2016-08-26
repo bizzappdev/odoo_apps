@@ -20,18 +20,18 @@
 #/#############################################################################
 
 {
-    'name': 'OpenERP - Develop - Test Mode',
+    'name': 'Odoo - Develop - Test Mode',
     'version': '8.0.0',
     "author": "BizzAppDev",
     "website": "http://bizzappdev.com",
     "category": "GenericModules",
     'sequence': 20,
-    'summary': 'OpenERP - Develop Test Mode',
+    'summary': 'Odoo - Develop Test Mode',
     'description': """
-OpenERP - Develop - Test Mode
-=====================
+To restrict Mails & know in which system you are
+================================================
 
-OpenERP / Odoo Module which help you to set the database for Test or Development mode.
+Odoo Module which help you to set the database for Test or Development mode.
 
 Features:
 ---------
