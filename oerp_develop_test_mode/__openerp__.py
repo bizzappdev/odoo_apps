@@ -26,7 +26,7 @@
     "website": "http://bizzappdev.com",
     "category": "GenericModules",
     'sequence': 20,
-    'summary': 'Odoo - Develop Test Mode',
+    'summary': 'To restrict Mails & know in which system you are',
     'description': """
 To restrict Mails & know in which system you are
 ================================================
