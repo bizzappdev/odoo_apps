@@ -3,7 +3,7 @@
 
 {
     'name': 'OpenERP - Develop - Test Mode',
-    'version': '10.0.0',
+    'version': '10.0.1',
     "author": "Ruchir Shukla (Bizzappdev)",
     "website": "http://bizzappdev.com",
     "category": "GenericModules",
