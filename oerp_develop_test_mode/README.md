@@ -1,4 +1,4 @@
-OpenERP - Develop - Test Mode
+Odoo - Develop - Test Mode
 =============================
 
 OpenERP / Odoo Module which help you to set the database for Test or Development mode.
@@ -9,6 +9,7 @@ Features:
     * Set-up Test or Development environment at the level of database.
     * Provides unique mode-bar for notifying either database is in Develop mode or Test mode.
     * Mail restriction for outgoing mails.
+    * Explicite ``error message`` option, If Raise error is False then it will silently pass and in log warning will generate else it will raise the popup. 
 
 Usage Of the Module:
 ====================
