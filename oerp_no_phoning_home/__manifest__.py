@@ -20,7 +20,7 @@
 #/#############################################################################
 {
     'name': 'Stop Phoning Home',
-    'version': '1.0',
+    'version': '10.0.1',
     'category': '',
     "sequence": 14,
     'complexity': "easy",
