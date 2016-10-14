@@ -32,25 +32,24 @@ class publisher_warranty_contract(AbstractModel):
     _inherit = "publisher_warranty.contract"
 
     @api.model
-    def _get_message():
+    def _get_message(self):
         if version_info and isinstance(version_info, (list,tuple)) and 'e' == version_info[-1]:
             ret =super(publisher_warranty_contract, self)._get_message()
             return ret
         return {}
 
     @api.model
-    def _get_sys_logs():
+    def _get_sys_logs(self):
         if version_info and isinstance(version_info, (list,tuple)) and 'e' == version_info[-1]:
             ret = super(publisher_warranty_contract, self)._get_sys_logs()
             return ret
         return
 
     @api.multi
-    def update_notification(ids, cron_mode=True):
+    def update_notification(self, cron_mode=True):
         if version_info and isinstance(version_info, (list,tuple)) and 'e' == version_info[-1]:
-            return super(publisher_warranty_contract, self).update_notification(
-                cr, uid, ids, cron_mode=cron_mode, context=context)
-        _logger.info("NO More Spying Stuff")
+            return super(publisher_warranty_contract, self).update_notification(cron_mode=cron_mode)
+        _logger.info("NO More phoning Home Stuff")
         return True
 
     @api.model
