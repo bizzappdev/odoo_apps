@@ -20,14 +20,14 @@
 #/#############################################################################
 {
     'name': 'Stop Phoning Home',
-    'version': '9.02',
+    'version': '9.03',
     'category': '',
     "sequence": 1,
     'complexity': "easy",
     'category': 'Extra Tools',
     'description': """
         Remove Few Phoning home feature effect from Core OpenERP.
-        
+
         The terms of the Odoo Enterprise Subscription Agreement do not allow disabling server requests to Odoo.com. For this reason, this module will not prevent communication with Odoo servers for Enterprise version.
     """,
     'author': 'BizzAppDev',
