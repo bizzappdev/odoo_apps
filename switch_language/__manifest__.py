@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Easily Switch Language',
-    'version': '10.0.0',
+    'version': '10.0.1',
     "author": "Bizzappdev",
     "website": "http://bizzappdev.com",
     "category": "GenericModules",
