@@ -13,9 +13,8 @@
     "assets": {
         "web.assets_backend": [
             "web_no_auto_save/static/src/js/web_no_auto_save.js",
-            "web_no_auto_save/static/src/xml/web_no_auto_save.xml",
         ],
     },
-    "license": "Other proprietary",
+    "license": "LGPL-3",
     "installable": True,
 }
