@@ -15,6 +15,9 @@
             "web_no_auto_save/static/src/js/web_no_auto_save.js",
         ],
     },
+    "images": [
+        "static/description/ConfirmationMsg.png",
+    ],
     "license": "LGPL-3",
     "installable": True,
 }
